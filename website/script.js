@@ -184,7 +184,7 @@ let apiEndpoint = "https://t21g4s5o76.execute-api.eu-west-2.amazonaws.com/Prod/v
 async function updateViews() {
     let response = await fetch(apiEndpoint);
     let data = await response.json();
-    viewCount.innerHTML = ` Views: ${data}`;
+    viewCount.innerHTML = `Views: ${data}`;
 }
 
 updateViews();
