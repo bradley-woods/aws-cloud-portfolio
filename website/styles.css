@@ -81,6 +81,11 @@ input {
     color: #73e2a7;
 }
 
+.view-count {
+    white-space: pre-line;
+    color: #73e2a7;
+}
+
 footer {
     position: fixed;
     bottom: 0;
