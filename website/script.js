@@ -180,7 +180,7 @@ const asciiArtWelcome = `
 
 const viewCount = document.querySelector(".view-count");
 async function updateViews() {
-    let response = await fetch("https://vyhbloqkq3wwghwfewlwurjbri0xjiap.lambda-url.eu-west-2.on.aws/");
+    let response = await fetch("https://pin1z3hd2d.execute-api.eu-west-2.amazonaws.com/dev");
     let data = await response.json();
     viewCount.innerHTML = ` Views: ${data}`;
 }
