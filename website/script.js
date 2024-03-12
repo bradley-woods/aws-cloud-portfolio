@@ -179,8 +179,10 @@ const asciiArtWelcome = `
 `;
 
 const viewCount = document.querySelector(".view-count");
+let apiEndpoint = "https://t21g4s5o76.execute-api.eu-west-2.amazonaws.com/Prod/views"
+
 async function updateViews() {
-    let response = await fetch("https://pin1z3hd2d.execute-api.eu-west-2.amazonaws.com/dev/");
+    let response = await fetch(apiEndpoint);
     let data = await response.json();
     viewCount.innerHTML = ` Views: ${data}`;
 }
